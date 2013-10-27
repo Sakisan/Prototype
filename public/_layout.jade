@@ -1,0 +1,18 @@
+!!!5
+html(lang="en")
+  head
+    title= title
+    meta(charset='utf-8')
+    link(type="text/css", rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css")
+    link(type="text/css", rel="stylesheet", href="/css/main.css")
+  body
+    != partial("_partials/_header")
+    != partial("_partials/_nav")
+
+    .wrapper
+      .main
+        .well
+          != yield
+
+    != partial("_partials/_footer")
+    != partial("_partials/_scripts")
