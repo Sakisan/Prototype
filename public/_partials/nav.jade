@@ -1,0 +1,16 @@
+nav.top-bar
+  ul
+    li.name
+      h1
+        a(href="#") Top Bar title
+    li.toggle-topbar.menu-icon
+      a(href="#")
+        span Menu
+  section.top-bar-section
+    ul.left
+      li.divider
+      each name in ["Home", "About", "Contact"]
+        li(class=(current.source == name ? 'active' : ''))
+          a(href="/#{name}")= name
+        li.divider
+      
