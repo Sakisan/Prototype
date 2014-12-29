@@ -3,18 +3,17 @@ html(lang="en")
   head
     title= title
     meta(charset='utf-8')
-    //- link(type="text/css", rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css")
     link(type="text/css", rel="stylesheet", href="/css/main.css")
     script(src="../js/modernizr.js")
 
   body
     != partial("_partials/header")
-    != partial("_partials/nav")
+    //-!= partial("_partials/nav")
 
     .wrapper
       .main
         .well
           != yield
 
-    != partial("_partials/footer")
+    //-!= partial("_partials/footer")
     != partial("_partials/scripts")
