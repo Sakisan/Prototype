@@ -5,12 +5,20 @@ html{
   overflow-y: scroll;
 }
 
-.lead{
-  white-space: pre;
+h1{
+  font-size: 65px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.1em;
+  margin-bottom: 20px;
 }
 
-.well{
-  box-shadow: none;
+.lead{
+  white-space: pre;
+
+  i.fa{
+
+  }
 }
 
 .wrapper{
@@ -23,10 +31,22 @@ html{
   padding: 20px 0;
 }
 
-h1{
-  font-size: 65px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.1em;
-  margin-bottom: 20px;
+#index {
+  table {
+    width:100%;
+
+    tr td {
+      text-align: center;
+    }
+  }
+
+}
+
+.inline-list-centered{
+  list-style-type: none;
+  margin-bottom: 0;
+  li{
+    display: inline-block;
+    margin: 0 1em;
+  }
 }
